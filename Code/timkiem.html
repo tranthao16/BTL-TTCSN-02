@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tìm kiếm sản phẩm</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.flaticon.com/free-icon/coffee_5978671" >
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="timkiem.css" />
+  </head>
+  <body> 
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('coffee')">
+          coffee
+        </button>
+        <button class="button-value" onclick="filterProduct('milktea')">
+          milktea
+        </button>
+        <button class="button-value" onclick="filterProduct('cake')">
+          cake
+        </button>
+        <button class="button-value" onclick="filterProduct('juice')">
+          juice
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="timkiem.js"></script>
+  </body>
+</html>
